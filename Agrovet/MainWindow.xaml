@@ -5,20 +5,100 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Agrovet"
         mc:Ignorable="d"
+        Background="Azure"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition />
+            <ColumnDefinition Width="60"  />
             <ColumnDefinition />
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
             <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Grid.Column="0" Margin="3">
+            <TextBlock  Name="logo" FontFamily="Consolas" FontSize="25" FontWeight="ExtraBold">Stock Control</TextBlock>
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="0" Margin="3">
+            <TextBlock  FontFamily="Consolas" FontSize="19" FontWeight="SemiBold" Margin="0,1,0,-1">Product ID</TextBlock>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="1" Margin="4">
+            <TextBox Name="productid"></TextBox>
+        </Border>
+        <Border Grid.Row="2" Grid.Column="0" Margin="3">
+            <TextBlock FontFamily="Consolas" FontSize="19" FontWeight="SemiBold">Product Name</TextBlock>
+        </Border>
+        <Border Grid.Row="2" Grid.Column="1" Margin="4" >
+            <TextBox Name="productname"></TextBox>
+        </Border>
+        <Border Grid.Row="3" Grid.Column="0" Margin="3" >
+            <TextBlock FontFamily="Consolas" FontSize="19" FontWeight="SemiBold">Description</TextBlock>
+        </Border>
+        <Border Grid.Row="3" Grid.Column="1" Margin="4">
+            <TextBox Name="description"></TextBox>
+        </Border>
+        <Border Grid.Row="4" Grid.Column="0">
+            <TextBlock FontFamily="Consolas" FontSize="19" FontWeight="SemiBold">Stock Level</TextBlock>            
+        </Border>
+        <Border Grid.Row="4" Grid.Column="1" Margin="4">
+            <TextBox Name="stocklevel"></TextBox>
+        </Border>
+        <Border Grid.Row="5" Grid.Column="0" Margin="3">
+            <TextBlock FontFamily="Consolas" FontSize="19" FontWeight="SemiBold">Reorder Level</TextBlock>
+        </Border>
+        <Border Grid.Row="5" Grid.Column="1" Margin="4">
+            <TextBox></TextBox>
+        </Border>
+        <Border Grid.Row="6" Grid.Column="0" Margin="3">
+            <TextBlock FontFamily="Consolas" FontSize="19" FontWeight="SemiBold">Out of Stock</TextBlock>
+        </Border>
+        <Border Grid.Row="7" Grid.Column="0" Margin="2">
+            <TextBlock FontFamily="Consolas" FontSize="19" FontWeight="SemiBold">No. of Order</TextBlock>
+        </Border>
+        <Border Grid.Row="6" Grid.Column="1" Margin="4">
+            <TextBox Name="outofstock"></TextBox>
+        </Border>
+        <Border Grid.Row="7" Grid.Column="1" Margin="4">
+            <TextBox Name="numberoforder"></TextBox>
+        </Border>
+        <Border Grid.Row="7" Grid.Column="2" Margin="3">
+            <TextBlock FontFamily="Consolas" FontSize="14" FontWeight="SemiBold">Cost($)</TextBlock>
+        </Border>
+        <Border Grid.Row="7" Grid.Column="3" Margin="4">
+            <TextBox Name="cost"></TextBox>
+        </Border>
+        <Border Grid.Row="8" Grid.Column="0" Margin="3">
+            <TextBlock FontFamily="Consolas" FontSize="19" FontWeight="SemiBold"> Action</TextBlock>
+        </Border>
+        <Border Grid.Row="8" Grid.Column="1" Margin="4">
+            <TextBox Name="action"></TextBox>
+        </Border>
+        <Border Grid.Row="9" Grid.Column="0">
+            <TextBlock FontFamily="Consolas" FontSize="19" FontWeight="SemiBold">Reorder Date</TextBlock>
+        </Border>
+        <Border Grid.Row="9" Grid.Column="1" Margin="4"></Border>
         
         
+        
+
+
+
+
     </Grid>
 </Window>
