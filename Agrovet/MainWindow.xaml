@@ -14,6 +14,7 @@
             <ColumnDefinition Width="60"  />
             <ColumnDefinition />
             <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -86,13 +87,16 @@
         <Border Grid.Row="8" Grid.Column="0" Margin="3">
             <TextBlock FontFamily="Consolas" FontSize="19" FontWeight="SemiBold"> Action</TextBlock>
         </Border>
+        
         <Border Grid.Row="8" Grid.Column="1" Margin="4">
             <TextBox Name="action"></TextBox>
         </Border>
         <Border Grid.Row="9" Grid.Column="0">
             <TextBlock FontFamily="Consolas" FontSize="19" FontWeight="SemiBold">Reorder Date</TextBlock>
         </Border>
-        <Border Grid.Row="9" Grid.Column="1" Margin="4"></Border>
+        <Border Grid.Row="9" Grid.Column="1" Margin="4">
+            <TextBox></TextBox>
+        </Border>
         
         
         
