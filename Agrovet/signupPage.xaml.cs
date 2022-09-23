@@ -10,27 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Agrovet
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for signupPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class signupPage : Window
     {
-        public MainWindow()
+        public signupPage()
         {
             InitializeComponent();
-        }
-
-        public void productid(object sender, RoutedEventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(productid.Text))
-            {
-                Stuff.Items.Add
-            }
         }
     }
 }
